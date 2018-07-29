@@ -1,0 +1,32 @@
+[package]
+authors = ["Zeyla Hellyer <zeylahellyer@gmail.com>"]
+categories = ["api-bindings", "asynchronous"]
+description = "Sharder implementation for high-uptime Discord bots."
+documentation = "https://serenity.github.io/serenity-sharder"
+homepage = "https://github.com/serenity-rs/sharder"
+keywords = ["discord", "serenity"]
+license = "ISC"
+name = "serenity-sharder"
+readme = "README.md"
+repository = "https://github.com/serenity-rs/sharder.git"
+version = "0.1.0"
+
+[badges.maintenance]
+status = "actively-developed"
+
+[badges.travis-ci]
+branch = "master"
+repository = "serenity-rs/sharder"
+
+[dependencies]
+futures = "0.1"
+log = "0.4"
+tokio = "0.1"
+tungstenite = "0.6"
+
+[dependencies.serenity]
+branch = "v0.6.x"
+git = "https://github.com/serenity-rs/serenity"
+
+[patch.crates-io]
+tokio-tls = { git = "https://github.com/aep/tokio-tls.git", rev = "7865734d2167160cabd4422aca76b8478e643b41" }
